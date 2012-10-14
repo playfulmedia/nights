@@ -1,0 +1,12 @@
+#before-begin {
+	margin-top: 2em;
+}
+
+#slide-title h2 {
+	text-transform: capitalize;
+	font-size: smaller;
+}
+
+.reveal li {
+	font-size: smaller;
+}

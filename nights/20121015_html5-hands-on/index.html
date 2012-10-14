@@ -1,0 +1,141 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>HTML5 Hands On</title>
+
+		<meta name="description" content="Presentation slides of Special Interest Night, HTML5 Hands On.">
+		<meta name="author" content="Andy Li">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script>
+			// If the query includes 'print-pdf' we'll use the PDF print sheet
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			    <section id="slide-title">
+			        <h1>HTML5 Hands On</h1>
+			        <h2>the 2nd Special Interest Night</h2>
+			        <div id="before-begin">Before We Begin<br>
+			            <ul>
+			                <li>
+			                    <a href="http://www.aptana.com/">Aptana Studio</a>
+			                </li>
+			                <li>
+			                    <a href="https://github.com/">Github</a>
+			                </li>
+		                    <li>
+		                        <a href="http://mac.github.com/">GitHub for Mac</a>
+		                    </li>
+		                    <li>
+		                        <a href="http://windows.github.com/">GitHub for Windows</a>
+		                    </li>
+			            </ul>
+			        </div>
+			    </section>
+			    <section>
+			        <h2>Things we going to try</h2>
+			        <div>
+			            <ul>
+		                    <li>Setting up slides using reveal.js and rvl.io.</li>
+		                    <li>Using some CSS3 properties with fall backs for IE.</li>
+		                    <li>Using GIT to version control a project.</li>
+		                    <li>Using Github to host a website for free.</li>
+			            </ul>
+			        </div>
+			    </section>
+			    <section>
+			        <h2>HTML5 slides</h2>
+			        <div>
+			            <ul>
+			                <li>
+			                    <a href="http://www.sitepoint.com/5-free-html5-presentation-systems/">5 of the Best Free HTML5 Presentation Systems</a>
+			                </li>
+			            </ul>
+			        </div>
+			    </section>
+			    <section>
+			        <h2>Reveal.js<br>
+			        </h2>
+			        <div>
+			            <ul>
+			                <li>
+			                	online editor:<br /><a href="http://rvl.io">rvl.io</a>
+				            </li>
+				        </ul>
+				    </div>
+				</section>
+			</div>
+
+
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Presentation progress bar -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				
+				theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+				]
+			});
+			
+		</script>
+
+	</body>
+</html>

@@ -3,11 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Andy Li - @andy_li
 
 # TECHNOLOGY COLOPHON
 
